@@ -1,6 +1,6 @@
 terraform {
   backend "azurerm" {
-    resource_group_name  = "devrelasaservice"
+    resource_group_name  = "myResourceGroup"
     storage_account_name = "terraformprod92"
     container_name       = "tfstate"
     key                  = "prod.terraform.tfstate"
@@ -36,7 +36,7 @@ resource "azurerm_kubernetes_cluster" "k8squickstart" {
   default_node_pool {
     name       = "default"
     node_count = var.node_count
-    vm_size    = "Standard_A2_v2"
+    vm_size    = "standard_b16ps_v2"
     
   }
 
