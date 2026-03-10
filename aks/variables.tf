@@ -5,7 +5,7 @@ variable "name" {
 
 variable "resource_group_name" {
   type = string
-  default = "devrelasaservice"
+  default = "myResourceGroup"
 }
 
 variable "location" {
@@ -15,7 +15,7 @@ variable "location" {
 
 variable "node_count" {
   type = string
-  default = 3
+  default = 1
 }
 
   variable "k8s_version" {
