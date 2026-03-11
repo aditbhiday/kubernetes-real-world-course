@@ -20,5 +20,5 @@ variable "node_count" {
 
   variable "k8s_version" {
     type = string
-    default = "1.31.100"
+    default = "1.35.0"
   }
